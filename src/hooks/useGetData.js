@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 // Importamos funciones hooks desde la libreria de react
 
-
-
 //funcion que actualiza nuestro estado: mydata es el estado 
 //y setData es la funcion que actializa nuestro estado
 const useGetData = (url) => {

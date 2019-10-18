@@ -6,6 +6,10 @@ const AboutStyle = styled.div`
     text-align: center;
 `;
 
+const AboutAvatar = styled.div`
+    padding: 2em 0 0 0;
+`;
+
 const AboutAvatarImg = styled.img`
     border-radius: 100%;
     width: 210px;
@@ -14,10 +18,6 @@ const AboutAvatarImg = styled.img`
     margin: 0 auto;
     display: block;
     box-shadow: 00 10px rgba(0,0,0,0.6);
-`;
-
-const AboutAvatar = styled.div`
-    padding: 2em 0 0 0;
 `;
 
 const AboutName = styled.div`
@@ -32,7 +32,7 @@ const AboutH2 = styled.h2`
     color: #055082;
 `;
 
-const AboutProfession = styled.div`
+const AboutProfession = styled.p`
     margin: .2em 0 1em 0;
     letter-spacing: 1.6px;
     font-weight: 450;
@@ -51,7 +51,7 @@ const AboutLocation = styled.p`
     font-weight: 400;
 `;
 
-const About = ({ avatar, name, profession, bio, address, social}) => (
+const About = ({ avatar, name, profession, bio, address, social }) => (
     <AboutStyle>
         <AboutAvatar>
             <AboutAvatarImg src={avatar} alt={name} />
@@ -69,9 +69,9 @@ const About = ({ avatar, name, profession, bio, address, social}) => (
             <p>{address}</p>
         </AboutLocation>
         <div className="About-social">
-            <Social social={social} />
+            <Social social={social}/>
         </div>
-    </AboutStyle>  
+    </AboutStyle>
 ); 
 
 export default About;
